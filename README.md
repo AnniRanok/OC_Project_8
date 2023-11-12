@@ -4,7 +4,7 @@ Vous êtes Data Scientist dans une très jeune start-up de l'AgriTech, nommée "
 
 La volonté de l’entreprise est de préserver la biodiversité des fruits en permettant des traitements spécifiques pour chaque espèce de fruits en développant des robots cueilleurs intelligents.
 
-![Logo](URL_зображення)
+![Logo](https://github.com/AnniRanok/OC_Projet_8/blob/main/fruits.jpg)
 
 
 La start-up souhaite dans un premier temps se faire connaître en mettant à disposition du grand public une application mobile qui permettrait aux utilisateurs de prendre en photo un fruit et d'obtenir des informations sur ce fruit.
