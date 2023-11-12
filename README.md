@@ -12,17 +12,17 @@ Pour la start-up, cette application permettrait de sensibiliser le grand public 
 
 De plus, le développement de l’application mobile permettra de construire une première version de l'architecture Big Data nécessaire.
 
-Les données
+#Les données
 Votre collègue Paul vous indique l’existence d’un document, formalisé par un alternant qui vient de quitter l’entreprise. Il a testé une première approche dans un environnement Big Data AWS EMR, à partir d’un jeu de données constitué des images de fruits et des labels associés (en téléchargement direct à ce lien). Le notebook réalisé par l’alternant servira de point de départ pour construire une partie de la chaîne de traitement des données.
 
-Votre mission
+#La mission
 Vous êtes donc chargé de vous approprier les travaux réalisés par l’alternant et de compléter la chaîne de traitement.
 
 Il n’est pas nécessaire d’entraîner un modèle pour le moment.
 
 L’important est de mettre en place les premières briques de traitement qui serviront lorsqu’il faudra passer à l’échelle en termes de volume de données !
 
-Contraintes
+#Contraintes
 Lors de son brief initial, Paul vous a averti des points suivants :
 
 Vous devrez tenir compte dans vos développements du fait que le volume de données va augmenter très rapidement après la livraison de ce projet. Vous continuerez donc à développer des scripts en Pyspark et à utiliser le cloud AWS pour profiter d’une architecture Big Data (EMR, S3, IAM). Si vous préférez, vous pourrez transférer les traitements dans un environnement Databricks
