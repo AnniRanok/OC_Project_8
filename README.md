@@ -17,7 +17,7 @@ De plus, le développement de l’application mobile permettra de construire une
 Le collègue Paul nous indique l’existence d’un document, formalisé par un alternant qui vient de quitter l’entreprise. Il a testé une première approche dans un environnement Big Data AWS EMR, à partir d’un jeu de données constitué des images de fruits et des labels associés en téléchargement direct à [ce lien](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P8/fruits.zip). Le notebook réalisé par l’alternant servira de point de départ pour construire une partie de la chaîne de traitement des données.
 
 ## La mission
-Nous sommes donc chargé de vous approprier les travaux réalisés par l’alternant et de compléter la chaîne de traitement.
+Nous sommes donc chargé de nous approprier les travaux réalisés par l’alternant et de compléter la chaîne de traitement.
 
 Il n’est pas nécessaire d’entraîner un modèle pour le moment.
 
@@ -26,11 +26,11 @@ L’important est de mettre en place les premières briques de traitement qui se
 ## Contraintes
 Lors de son brief initial, Paul nous a averti des points suivants :
 
-Nous devrons tenir compte dans vos développements du fait que le volume de données va augmenter très rapidement après la livraison de ce projet. Nous continuerons donc à développer des scripts en Pyspark et à utiliser le cloud AWS pour profiter d’une architecture Big Data (EMR, S3, IAM). 
+Nous devrons tenir compte dans nos développements du fait que le volume de données va augmenter très rapidement après la livraison de ce projet. Nous continuerons donc à développer des scripts en Pyspark et à utiliser le cloud AWS pour profiter d’une architecture Big Data (EMR, S3, IAM). 
 
 Nous devon faire une démonstration de la mise en place d’une instance EMR opérationnelle, ainsi qu’ expliquer pas à pas le script PySpark, que nous aurons complété :
 
-- d’un traitement de diffusion des poids du modèle Tensorflow sur les clusters (broadcast des “weights” du modèle) qui avait été oublié par l’alternant. Vous pourrez vous appuyer sur l’article “Distributed model inference using TensorFlow Keras” disponible dans les ressources;
+- d’un traitement de diffusion des poids du modèle Tensorflow sur les clusters (broadcast des “weights” du modèle) qui avait été oublié par l’alternant;
 
 - d’une étape de réduction de dimension de type PCA en PySpark.
 
