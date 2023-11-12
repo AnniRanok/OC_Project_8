@@ -14,7 +14,7 @@ Pour la start-up, cette application permettrait de sensibiliser le grand public 
 De plus, le développement de l’application mobile permettra de construire une première version de l'architecture Big Data nécessaire.
 
 ## Les données
-Votre collègue Paul vous indique l’existence d’un document, formalisé par un alternant qui vient de quitter l’entreprise. Il a testé une première approche dans un environnement Big Data AWS EMR, à partir d’un jeu de données constitué des images de fruits et des labels associés (en téléchargement direct à [ce lien] (https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P8/fruits.zip). Le notebook réalisé par l’alternant servira de point de départ pour construire une partie de la chaîne de traitement des données.
+Le collègue Paul nous indique l’existence d’un document, formalisé par un alternant qui vient de quitter l’entreprise. Il a testé une première approche dans un environnement Big Data AWS EMR, à partir d’un jeu de données constitué des images de fruits et des labels associés (en téléchargement direct à ce lien (https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P8/fruits.zip). Le notebook(https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P8/Mode_ope%CC%81ratoire.zip) réalisé par l’alternant servira de point de départ pour construire une partie de la chaîne de traitement des données.
 
 ## La mission
 Vous êtes donc chargé de vous approprier les travaux réalisés par l’alternant et de compléter la chaîne de traitement.
