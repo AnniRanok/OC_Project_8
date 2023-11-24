@@ -1,41 +1,42 @@
 # OC_Projet_8
-# Déployez un modèle dans le cloud
-Une très jeune start-up de l'AgriTech, nommée "Fruits!", cherche à proposer des solutions innovantes pour la récolte des fruits.
 
-La volonté de l’entreprise est de préserver la biodiversité des fruits en permettant des traitements spécifiques pour chaque espèce de fruits en développant des robots cueilleurs intelligents.
+# Deploy a Model in the Cloud
+A very young AgriTech start-up named "Fruits!" is looking to offer innovative solutions for fruit harvesting.
+
+The company's goal is to preserve fruit biodiversity by enabling specific treatments for each fruit species and developing intelligent fruit-picking robots.
 
 ![Logo](https://github.com/AnniRanok/OC_Projet_8/blob/main/fruits.jpg)
 
 
-La start-up souhaite dans un premier temps se faire connaître en mettant à disposition du grand public une application mobile qui permettrait aux utilisateurs de prendre en photo un fruit et d'obtenir des informations sur ce fruit.
+Initially, the start-up wishes to gain recognition by providing the general public with a mobile app that allows users to take a picture of a fruit and obtain information about it.
 
-Pour la start-up, cette application permettrait de sensibiliser le grand public à la biodiversité des fruits et de mettre en place une première version du moteur de classification des images de fruits.
+For the start-up, this app will raise public awareness about fruit biodiversity and establish the first version of a fruit image classification engine.
 
-De plus, le développement de l’application mobile permettra de construire une première version de l'architecture Big Data nécessaire.
+Moreover, the development of the mobile app will enable the construction of the necessary initial Big Data architecture.
 
-## Les données
-Le collègue Paul nous indique l’existence d’un document, formalisé par un alternant qui vient de quitter l’entreprise. Il a testé une première approche dans un environnement Big Data AWS EMR, à partir d’un jeu de données constitué des images de fruits et des labels associés en téléchargement direct à [ce lien](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P8/fruits.zip). Le notebook réalisé par l’alternant servira de point de départ pour construire une partie de la chaîne de traitement des données.
 
-## La mission
-Nous sommes donc chargé de nous approprier les travaux réalisés par l’alternant et de compléter la chaîne de traitement.
+## The Data
+Our colleague Paul informs us about a document formalized by an intern who has just left the company. They tested a first approach in an AWS EMR Big Data environment using a dataset of fruit images and associated labels, available for direct download at  [this link](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P8/fruits.zip). The notebook created by the intern will serve as a starting point for building part of the data processing chain.
 
-Il n’est pas nécessaire d’entraîner un modèle pour le moment.
 
-L’important est de mettre en place les premières briques de traitement qui serviront lorsqu’il faudra passer à l’échelle en termes de volume de données !
+## The Mission
+We are therefore tasked with appropriating the work done by the intern and completing the processing chain.
 
-## Contraintes
-Lors de son brief initial, Paul nous a averti des points suivants :
+There is no need to train a model at this time.
 
-Nous devrons tenir compte dans nos développements du fait que le volume de données va augmenter très rapidement après la livraison de ce projet. Nous continuerons donc à développer des scripts en Pyspark et à utiliser le cloud AWS pour profiter d’une architecture Big Data (EMR, S3, IAM). 
+The important thing is to establish the first processing steps that will serve when scaling up in terms of data volume!
 
-Nous devon faire une démonstration de la mise en place d’une instance EMR opérationnelle, ainsi qu’ expliquer pas à pas le script PySpark, que nous aurons complété :
+## Constraints
+During his initial briefing, Paul warned us of the following points:
 
-- d’un traitement de diffusion des poids du modèle Tensorflow sur les clusters (broadcast des “weights” du modèle) qui avait été oublié par l’alternant;
+We must consider in our developments that the data volume will increase rapidly after the delivery of this project. Therefore, we will continue to develop PySpark scripts and use the AWS cloud to take advantage of a Big Data architecture (EMR, S3, IAM).
 
-- d’une étape de réduction de dimension de type PCA en PySpark.
+We must demonstrate the setup of an operational EMR instance, as well as explain step by step the PySpark script we will have completed:
 
-Nous respecterons les contraintes du RGPD : dans notre contexte, nous veillerons à paramétrer notre installation afin d’utiliser des serveurs situés sur le territoire européen.
+A process for broadcasting TensorFlow model weights across clusters (broadcasting the model's "weights") that was overlooked by the intern;
+A PCA type dimension reduction step in PySpark.
+We will respect GDPR constraints: in our context, we will ensure our setup uses servers located within European territory.
 
-Notre retour critique de cette solution sera également précieuse, avant de décider de la généraliser.
+Our critical feedback on this solution will also be valuable before deciding to generalize it.
 
-La mise en œuvre d’une architecture Big Data de type EMR engendrera des coûts. Nous veilleros donc à ne maintenir l’instance EMR opérationnelle que pour les tests et les démos.
+The implementation of an EMR type Big Data architecture will incur costs. We will therefore ensure to maintain the EMR instance operational only for tests and demos.
