@@ -1,42 +1,66 @@
-# OC_Projet_8
-
-# Deploy a Model in the Cloud
-A very young AgriTech start-up named "Fruits!" is looking to offer innovative solutions for fruit harvesting.
-
-The company's goal is to preserve fruit biodiversity by enabling specific treatments for each fruit species and developing intelligent fruit-picking robots.
+This repository focuses on the **cloud deployment pipeline and big data architecture**, not the mobile frontend or final model training.
 
 ![Logo](https://github.com/AnniRanok/OC_Projet_8/blob/main/fruits.jpg)
 
 
-Initially, the start-up wishes to gain recognition by providing the general public with a mobile app that allows users to take a picture of a fruit and obtain information about it.
+##  Goal
 
-For the start-up, this app will raise public awareness about fruit biodiversity and establish the first version of a fruit image classification engine.
+To develop a **scalable, privacy-compliant cloud infrastructure** that processes large volumes of fruit image data, distributes a TensorFlow model, and applies dimensionality reduction with PySpark — all while ensuring cost-efficiency and GDPR alignment.
 
-Moreover, the development of the mobile app will enable the construction of the necessary initial Big Data architecture.
+---
+
+##  Contents
+
+```
+FruitsAI-Cloud-Pipeline/
+├── pca_reduction.py              # Dimensionality reduction with PySpark
+├── broadcast_model.py           # TensorFlow weights distribution logic
+├── emr_setup.md                 # Step-by-step guide to launching an EMR cluster
+├── sample_notebook.ipynb        # Inherited from former intern, updated and extended
+├── data/
+│   └── fruits_dataset/          # Sample image and label data
+├── docs/
+│   └── GDPR_compliance.md       # Hosting & privacy considerations
+├── README.md                    # Project overview and goals (this file)
+```
+
+---
+
+## 🧠 Key Concepts Implemented
+
+* **AWS EMR** as scalable processing platform
+* **PySpark** for distributed computation
+* **Broadcasting model weights** across nodes
+* **PCA** for feature dimensionality reduction
+* **GDPR compliance**, via EU-region server enforcement
+* **Cost-conscious architecture** for testing and demos only
+
+---
+
+##  Use Case Example
+
+1.  Upload image dataset to AWS S3
+2.  Launch EMR cluster (EU region only)
+3.  Distribute model weights using `broadcast_model.py`
+4.  Apply PCA reduction using `pca_reduction.py`
+5.  Store transformed vectors for model training or inference
 
 
-## The Data
-Our colleague Paul informs us about a document formalized by an intern who has just left the company. They tested a first approach in an AWS EMR Big Data environment using a dataset of fruit images and associated labels, available for direct download at  [this link](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Data_Scientist_P8/fruits.zip). The notebook created by the intern will serve as a starting point for building part of the data processing chain.
+##  Contributing
 
+Contributions welcome! Please open issues for bugs or suggestions.
 
-## The Mission
-We are therefore tasked with appropriating the work done by the intern and completing the processing chain.
+---
 
-There is no need to train a model at this time.
+##  Author
 
-The important thing is to establish the first processing steps that will serve when scaling up in terms of data volume!
+Inna Konar – Cloud & Data Science Consultant | AgriTech AI
 
-## Constraints
-During his initial briefing, Paul warned us of the following points:
+📧 [konar.inna@gmail.com](mailto:konar.inna@gmail.com)
 
-We must consider in our developments that the data volume will increase rapidly after the delivery of this project. Therefore, we will continue to develop PySpark scripts and use the AWS cloud to take advantage of a Big Data architecture (EMR, S3, IAM).
+---
 
-We must demonstrate the setup of an operational EMR instance, as well as explain step by step the PySpark script we will have completed:
+##  License
 
-A process for broadcasting TensorFlow model weights across clusters (broadcasting the model's "weights") that was overlooked by the intern;
-A PCA type dimension reduction step in PySpark.
-We will respect GDPR constraints: in our context, we will ensure our setup uses servers located within European territory.
+MIT License – use freely with attribution.
 
-Our critical feedback on this solution will also be valuable before deciding to generalize it.
-
-The implementation of an EMR type Big Data architecture will incur costs. We will therefore ensure to maintain the EMR instance operational only for tests and demos.
