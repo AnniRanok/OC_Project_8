@@ -26,7 +26,7 @@ FruitsAI-Cloud-Pipeline/
 
 ---
 
-## 🧠 Key Concepts Implemented
+##  Key Concepts Implemented
 
 * **AWS EMR** as scalable processing platform
 * **PySpark** for distributed computation
